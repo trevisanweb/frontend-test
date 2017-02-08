@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i);
+
+*{ box-sizing: border-box; }
+
+html, body {
+	background: #fff;
+	color: $color-text;
+	font-weight: normal;
+	font-size: 18px;
+	font-family: $font-stack;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+.fullall{
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+.container{
+	max-width: 	940px;
+	margin:0 auto;
+}
+
+.row{
+	margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-2{
+	width: 16.66666667%;
+	padding-right: 15px;
+	padding-left: 15px;
+	float: left;
+	box-sizing: border-box;
+}
+
+.col-3{
+	width: 25%;
+	padding-right: 15px;
+	padding-left: 15px;
+	float: left;
+	box-sizing: border-box;
+}
+
+.col-4{
+	width: 33.33333333%;
+	padding-right: 15px;
+	padding-left: 15px;
+	float: left;
+	box-sizing: border-box;
+}
+
+.col-6{
+	width: 50%;
+	padding-right: 15px;
+	padding-left: 15px;
+	float: left;
+	box-sizing: border-box;
+}
+
+.col-8{
+	width: 66.66666667%;
+	padding-right: 15px;
+	padding-left: 15px;
+	float: left;
+	box-sizing: border-box;
+}
+
+.col-9{
+	width: 75%;
+	padding-right: 15px;
+	padding-left: 15px;
+	float: left;
+	box-sizing: border-box;
+}
+
+.resizeimg img{
+	width: 100%;
+	height: auto;
+}
+
+.pdl0{ padding-left: 0;}
+.pdr0{ padding-right: 0;}
+.fr{ float: right;}

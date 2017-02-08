@@ -1,0 +1,153 @@
+.boxbanners{
+	width: 100%;
+	float: left;
+	padding:40px 0;
+
+	a.bannerbd{ 
+		display: block;
+		border-radius: 3px;
+		border:3px solid $color-two;
+	}
+}
+
+.submenu{
+	border: 1px solid $color-footer;
+	padding: 16px 15px;
+	
+	h3{
+		font-size: 16px;
+		border-bottom: 1px solid $color-footer;
+		padding-bottom: 10px;
+		color:$color-one;
+		margin-bottom: 10px;
+	}
+	nav{
+		dl{
+			padding-left: 10px;	
+
+			dt, dt > a{
+				font-size: 14px;
+				padding-top:10px;
+				padding-bottom:10px;
+				color: $color-three;
+				font-weight: bold;
+			}
+			dt:first-child{
+				padding-bottom:5px;
+			}
+			
+			dt:before{
+				width: 0;
+				height: 0;
+				display: inline-block;
+				vertical-align: middle;
+				border-top: 6px solid transparent;
+				border-bottom: 6px solid transparent;
+				border-left: 10px solid #f7941e;
+				content: "";
+				margin: 0 10px 0 0;
+				margin-left: 9px;
+			}
+
+			dd{	
+					margin:5px 0 5px 10px;
+					font-weight: 400;
+
+					a{
+						color: $color-text;
+					  	font-size: 14px;
+					  	text-decoration: none;	
+					}
+			}
+
+			dd:last-child{
+				margin:5px 0 10px 10px;
+			}	
+		}
+	}
+}
+
+.boxcenter{
+	h2.title{
+		width: 100%;
+		font-size:20px;
+		font-weight: 300;
+		color: $color-two;
+		padding-bottom:20px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid $color-footer;
+	}
+
+	p{
+		font-size: 16px;
+	}
+}
+
+.boxright{
+	h2.title{
+		width: 100%;
+		font-size:20px;
+		font-weight: 300;
+		color: $color-two;
+		padding-bottom:20px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid $color-footer;
+	}
+
+	figure{
+		width: 100%;
+		display: block;
+		overflow: hidden;
+		border-radius: 10px;
+	}
+}
+
+.feature{
+	width: 100%;
+	position: relative;
+	display: block;
+	margin:40px 0;
+	float: left;
+
+	figure{
+		img{ 
+			width: 100%;
+		}
+	}
+
+	h6.legend{
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+			text-align: center;
+			font-size: 16px;
+			font-weight: 500;
+			color:$color-neutral;
+			padding:15px 0;
+			background:rgba(0,0,0,0.5);
+	}	
+}
+
+.boxs{
+	.item{
+		padding:16px;
+		border:1px solid $color-one;
+		min-height: 175px;
+
+		figure{
+			text-align: center;
+			margin-bottom:16px ;
+
+			img{
+				display: inline-block;
+			}
+		}
+
+		h6{
+			font-size: 14px;
+			text-align: center;
+		}
+	}
+}
+
+
