@@ -1,0 +1,107 @@
+footer{
+	width: 100%;
+	float:left;
+	margin-top: 80px;
+	padding-top: 40px;
+	background-color: $color-header;
+
+	h2.title{
+		font-size: 20px;
+
+	}
+
+	.footertop{
+		width: 100%;
+		float: left;
+		padding-bottom: 30px;
+		border-bottom: 1px solid $color-footer;	
+
+		.title{
+			font-size: 20px;
+			margin-bottom: 20px;
+		}
+
+		nav.fullall{
+			min-height: 170px;
+			margin-bottom: 40px;
+
+			dl.nav{
+				dt{
+					font-size: 16px;
+					font-weight: bold;
+					margin-bottom: 20px;
+				}
+
+				dd{
+					line-height: 1.4;
+					a{
+						font-size: 13px;
+						color: $color-text;
+						text-decoration: none;
+					}	
+				}
+			}
+		}
+
+		a.link{
+			font-size: 13px;
+			color: $color-text;
+			font-weight: bold;
+		}
+
+		.boxlogos{
+			width: 100%;
+			float: left;
+
+			figure{
+				width: 50%;
+				margin:10px 0;
+				float: left;
+				min-height: 65px;
+				text-align: center;
+
+				img{
+					display: inline-block;
+				}
+			}
+		}
+	}
+
+	.footermiddle{
+		width: 100%;
+		float: left;
+		padding:30px 0;
+
+		.item{
+			list-style: none;
+
+			li{
+				float: left;
+				border-right: 1px solid $color-footer;
+				padding:0 18px;
+
+				a{
+						font-weight: bold;
+						font-size: 13px;
+						color: $color-text;
+						text-decoration: none;
+
+				}
+			}
+
+			li:last-child{
+				border-right:none;
+			}
+		}
+	}
+
+	.footer-bottom{
+		width: 100%;
+		float: left;
+		background-color:$color-footer;
+		font-size: 13px;
+		font-weight: 400;
+		padding:30px 0 80px;
+		text-align: center;
+	}
+}

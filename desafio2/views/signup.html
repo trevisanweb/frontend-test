@@ -1,0 +1,111 @@
+<div class="container" ng-controller="signupController">
+			<header class="app-header">
+				<h1>Formulário <span>De Cadastro</span></h1>
+			</header>
+			
+			<section class="content">
+				<h2>Preencha Corretamente os campos</h2>
+				
+				<form method="post" name="signup" ng-submit="submitForm()">
+				  
+				  <div class="form-group">
+				    <label for="email">Email</label>
+				    <input type="email" name="email" id="email" class="form-control signup-input" id="email" required="" ng-model="user.email">
+				  </div>
+				  
+				  <div class="form-group">
+				    <label for="password">Senha</label>
+				    <input type="password" name="password" id="password" class="form-control signup-input" id="senha" required="" ng-model="user.password">
+				  </div>
+				  
+				  <div class="form-group">
+				    <label for="passwordConfirmation">Confirme sua senha</label>
+				    <input type="password" name="passwordConfirmation" id="passwordConfirmation" class="form-control signup-input" id="passwordConfirmation" data-password-verify="user.password" required="" ng-model="user.passwordConfirmation">
+				    <div ng-show="form.confirm_password.$error.required">
+				        Field required!</div>
+				      <div ng-show="form.confirm_password.$error.passwordVerify">
+				        Fields are not equal!</div>
+				  </div>
+				  
+				  <div class="form-group">
+				    <label for="fullName">Nome Completo</label>
+				    <input type="text" name="fullName" id="fullName" class="form-control signup-input"  required="" ng-model="user.fullName">
+				  </div>
+
+				  <div class="form-group">
+				    <label for="birthDate">Data de Nascimento</label>
+				    <input type="date" name="birthDate" id="birthDate" class="form-control signup-input" required="" ng-model="user.birthDate">
+				  </div>
+
+				  <div class="form-group">
+				    <label for="zipCode">CEP</label>
+				    <input type="text" name="zipCode" id="zipCode" class="form-control signup-input" required="" ng-model="user.zipCode">
+				  </div>
+
+				  <div class="form-group">
+				    <label for="streetName">Rua</label>
+				    <input type="text" name="streetName" id="streetName" class="form-control signup-input" required="" ng-model="user.streetName">
+				  </div>
+
+				  <div class="form-group">
+				    <label for="number">Número</label>
+				    <input type="number" name="number" id="number" class="form-control signup-input" required="" ng-model="user.number">
+				  </div>
+
+				  <div class="form-group">
+				    <label for="complement">Complemento</label>
+				    <input type="text" name="complement" id="complement" class="form-control signup-input" ng-model="user.complement">
+				  </div>
+
+				  <div class="form-group">
+				    <label for="neighbourhood">Bairro</label>
+				    <input type="text" name="neighbourhood" id="neighbourhood" class="form-control signup-input" ng-model="user.neighbourhood">
+				  </div>
+
+				  <div class="form-group">
+				    <label for="country">Pais</label>
+				    <select name="country" id="country" class="form-control signup-input" required="" ng-model="user.country">
+				    	<option value="AR">Argentina</option>
+				    	<option value="BR">Brasil</option>
+				    	<option value="CL">Chile</option>
+				    	<option value="CO">Colômbia</option>
+				    	<option value="CR">Costa Rica</option>
+				    	<option value="CU">Cuba</option>
+				    	<option value="DO">República Dominicana</option>
+				    	<option value="EC">Equador</option>
+				    	<option value="FR">França</option>
+				    	<option value="GF">Guiana Francesa</option>
+				    	<option value="GT">Guatemala</option>
+				    	<option value="HN">Honduras</option>
+				    	<option value="HT">Haiti</option>
+				    	<option value="IT">Itália</option>
+				    	<option value="JM">Jamaica</option>
+				    	<option value="MX">México</option>
+				    	<option value="NI">Nicarágua</option>
+				    	<option value="PA">Panamá</option>
+				    	<option value="PE">Peru</option>
+				    	<option value="PR">Porto Rico</option>
+				    	<option value="PY">Paraguai</option>
+				    	<option value="SV">El Salvador</option>
+				    	<option value="US">Estados Unidos</option>
+				    	<option value="UY">Uruguai</option>
+				    	<option value="VE">Venezuela</option>
+
+				    </select>
+				  </div>
+
+				  <div class="form-group">
+				    <label for="state">Estado</label>
+				    <input type="text" name="state" id="state" class="form-control signup-input" required="" ng-model="user.state">
+				  </div>
+
+				  <div class="form-group">
+				    <label for="city">Cidade</label>
+				    <input type="text" name="city" id="city" class="form-control signup-input" required="" ng-model="user.city">
+				  </div>
+					
+					<button type="submit" name="submit" id="submit" class="btn" ngClick="Submit">Enviar</button>
+				</form>
+			</section>
+</div><!-- /container -->
+
